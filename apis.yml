@@ -1,0 +1,56 @@
+name: Custom Chat API | MirrorFly
+description: >-
+  MirrorFly is a self-hosted CPaaS providing token-authenticated REST Chat Platform APIs (User and Admin) plus SDKs for
+  in-app chat, HD video/voice calling, VoIP, contact center, chatbot/conversational AI, and live streaming for web and
+  mobile apps.
+url: https://custom-chat-api-mirrorfly.apievangelist.com/apis.yml
+created: '2026-07-21'
+modified: '2026-07-21'
+specificationVersion: '0.21'
+tags:
+  - Chat API
+  - Messaging
+  - CPaaS
+  - VoIP
+  - Voice
+  - Video Calling
+  - Contact Center
+  - Conversational AI
+  - Chatbot
+  - Live Streaming
+apis:
+  - name: MirrorFly Chat Platform API
+    description: >-
+      Token-authenticated REST API for building in-app chat, split into User APIs and Admin APIs (users, contacts,
+      recent/history chat, groups, media, metadata, presence, block/unblock, call logs, device token). Uses versioned
+      /api/v1/ paths against a customer-specific instance base URL; bearer token valid up to 1 hour.
+    humanURL: https://www.mirrorfly.com/docs/platformapi/overview/
+    baseURL: https://{api-base-url}/api/v1
+    tags:
+      - Chat API
+      - Messaging
+      - CPaaS
+      - VoIP
+      - Voice
+      - Video Calling
+      - Contact Center
+      - Conversational AI
+      - Chatbot
+      - Live Streaming
+    properties:
+      - type: Documentation
+        url: https://www.mirrorfly.com/docs/platformapi/overview/
+      - type: Documentation
+        url: https://www.mirrorfly.com/docs/platformapi/userapis/getstarted/login/
+      - type: Documentation
+        url: https://www.mirrorfly.com/docs/platformapi/adminapis/get-started/
+      - type: LLMSTxt
+        url: https://www.mirrorfly.com/llms.txt
+maintainers:
+  - FN: Custom Chat API | MirrorFly
+    url: https://www.mirrorfly.com/
+generated:
+  by: apis.io/add
+  model: claude-opus-4-8
+  confidence: 80
+  at: '2026-07-21T10:54:14.715Z'
