@@ -3,7 +3,7 @@ description: >-
   MirrorFly is a self-hosted CPaaS providing token-authenticated REST Chat Platform APIs (User and Admin) plus SDKs for
   in-app chat, HD video/voice calling, VoIP, contact center, chatbot/conversational AI, and live streaming for web and
   mobile apps.
-url: https://custom-chat-api-mirrorfly.apievangelist.com/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/custom-chat-api-mirrorfly/refs/heads/main/apis.yml
 created: '2026-07-21'
 modified: '2026-07-21'
 specificationVersion: '0.21'
