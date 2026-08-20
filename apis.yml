@@ -16,6 +16,17 @@ tags:
   - Video Calling
   - Contact Center
   - Conversational AI
+  - Chatbots
+  - Live Streaming
+tags_raw:
+  - Chat API
+  - Messaging
+  - CPaaS
+  - VoIP
+  - Voice
+  - Video Calling
+  - Contact Center
+  - Conversational AI
   - Chatbot
   - Live Streaming
 apis:
@@ -27,6 +38,17 @@ apis:
     humanURL: https://www.mirrorfly.com/docs/platformapi/overview/
     baseURL: https://{api-base-url}/api/v1
     tags:
+      - Chat API
+      - Messaging
+      - CPaaS
+      - VoIP
+      - Voice
+      - Video Calling
+      - Contact Center
+      - Conversational AI
+      - Chatbots
+      - Live Streaming
+    tags_raw:
       - Chat API
       - Messaging
       - CPaaS
