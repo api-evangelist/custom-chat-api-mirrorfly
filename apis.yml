@@ -4,6 +4,17 @@ description: >-
   in-app chat, HD video/voice calling, VoIP, contact center, chatbot/conversational AI, and live streaming for web and
   mobile apps.
 url: https://raw.githubusercontent.com/api-evangelist/custom-chat-api-mirrorfly/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 created: '2026-07-21'
 modified: '2026-07-21'
 specificationVersion: '0.23'
