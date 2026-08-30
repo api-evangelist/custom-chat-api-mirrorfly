@@ -27,7 +27,7 @@ tags:
   - Video Calling
   - Contact Center
   - Conversational AI
-  - Chatbots
+  - Chatbot
   - Live Streaming
 tags_raw:
   - Chat API
@@ -57,7 +57,7 @@ apis:
       - Video Calling
       - Contact Center
       - Conversational AI
-      - Chatbots
+      - Chatbot
       - Live Streaming
     tags_raw:
       - Chat API
