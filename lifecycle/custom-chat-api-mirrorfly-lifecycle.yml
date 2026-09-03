@@ -1,0 +1,19 @@
+generated: '2026-09-03'
+method: searched
+source: https://www.mirrorfly.com/docs/platformapi/api-changelog/
+versioning:
+  scheme: uri-path (/api/v1/) with a semver-like API change log
+  current: 'API v1 paths; change log at 2.1.9'
+  docs: https://www.mirrorfly.com/docs/platformapi/api-changelog/
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No deprecation policy or Sunset/Deprecation (RFC 8594) header support is published.
+sla:
+  url: null
+  note: No public SLA page found; uptime commitments are handled in enterprise contracts (not published).
+status_page: null
+status_page_note: >-
+  No status page found — status.mirrorfly.com does not resolve, and none is linked from the site or
+  docs. As a self-hosted product, service status is per customer instance.
+deprecated_operations: []

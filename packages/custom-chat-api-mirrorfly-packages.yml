@@ -1,0 +1,74 @@
+generated: '2026-09-03'
+method: searched
+source: registry.npmjs.org, pub.dev, repo.mirrorfly.com (first-party Maven), trunk.cocoapods.org, github.com/MirrorFly
+note: >-
+  All npm packages are published by "contus" — CONTUS TECH PRIVATE LIMITED, MirrorFly's parent
+  company (named as the operating company in MirrorFly's own site footer), so they are first-party.
+  The Android SDK is distributed from MirrorFly's own Maven repository (repo.mirrorfly.com/release),
+  not Maven Central. The iOS docs currently pin CocoaPods 'MirrorFlySDK' (5.18.x line). These are
+  client-side chat/call SDKs for the self-hosted platform, not REST-API wrapper SDKs.
+packages:
+- language: javascript
+  registry: npm
+  name: mirrorfly-sdk
+  url: https://www.npmjs.com/package/mirrorfly-sdk
+  install: npm install mirrorfly-sdk
+  official: true
+  version: 7.1.0
+  published: '2026-07-15'
+- language: javascript
+  registry: npm
+  name: mirrorfly-uikit
+  url: https://www.npmjs.com/package/mirrorfly-uikit
+  install: npm install mirrorfly-uikit
+  official: true
+  version: 4.1.9
+  published: '2025-06-12'
+- language: javascript
+  registry: npm
+  name: mirrorfly-reactnative-sdk
+  url: https://www.npmjs.com/package/mirrorfly-reactnative-sdk
+  install: npm install mirrorfly-reactnative-sdk
+  official: true
+  version: 2.5.1
+  published: '2025-11-13'
+- language: javascript
+  registry: npm
+  name: mirrorfly-uikit-react-native
+  url: https://www.npmjs.com/package/mirrorfly-uikit-react-native
+  install: npm install mirrorfly-uikit-react-native
+  official: true
+  version: 1.4.8
+  published: '2024-12-31'
+- language: dart
+  registry: pub.dev
+  name: mirrorfly_plugin
+  url: https://pub.dev/packages/mirrorfly_plugin
+  install: flutter pub add mirrorfly_plugin
+  official: true
+  version: 1.9.0
+  published: '2025-10-09'
+- language: dart
+  registry: pub.dev
+  name: mirrorfly_uikit_plugin
+  url: https://pub.dev/packages/mirrorfly_uikit_plugin
+  install: flutter pub add mirrorfly_uikit_plugin
+  official: true
+  version: 3.0.0+1
+  published: '2025-09-10'
+- language: kotlin/java
+  registry: maven (first-party, repo.mirrorfly.com/release)
+  name: com.mirrorfly.sdk:mirrorflysdk
+  url: https://repo.mirrorfly.com/release/com/mirrorfly/sdk/mirrorflysdk/maven-metadata.xml
+  install: implementation 'com.mirrorfly.sdk:mirrorflysdk:7.13.39'
+  official: true
+  version: 7.13.39
+  published: '2026-08-05'
+- language: swift/objective-c
+  registry: cocoapods
+  name: MirrorFlySDK
+  url: https://cocoapods.org/pods/MirrorFlySDK
+  install: pod 'MirrorFlySDK'
+  official: true
+  version: 5.18.25
+  published: '2026-05-29'

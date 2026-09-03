@@ -1,8 +1,7 @@
 name: Custom Chat API | MirrorFly
-description: >-
-  MirrorFly is a self-hosted CPaaS providing token-authenticated REST Chat Platform APIs (User and Admin) plus SDKs for
-  in-app chat, HD video/voice calling, VoIP, contact center, chatbot/conversational AI, and live streaming for web and
-  mobile apps.
+description: MirrorFly is a self-hosted CPaaS providing token-authenticated REST Chat Platform APIs (User and Admin)
+  plus SDKs for in-app chat, HD video/voice calling, VoIP, contact center, chatbot/conversational AI, and live streaming
+  for web and mobile apps.
 url: https://raw.githubusercontent.com/api-evangelist/custom-chat-api-mirrorfly/refs/heads/main/apis.yml
 deliveryModel:
   model: unknown
@@ -16,9 +15,38 @@ deliveryModel:
   generated: '2026-08-28'
   method: derived
 created: '2026-07-21'
-modified: '2026-07-21'
+modified: '2026-09-03'
 specificationVersion: '0.23'
 tags:
+- Chat API
+- Messaging
+- CPaaS
+- VoIP
+- Voice
+- Video Calling
+- Contact Center
+- Conversational AI
+- Chatbots
+- Live Streaming
+tags_raw:
+- Chat API
+- Messaging
+- CPaaS
+- VoIP
+- Voice
+- Video Calling
+- Contact Center
+- Conversational AI
+- Chatbot
+- Live Streaming
+apis:
+- name: MirrorFly Chat Platform API
+  description: Token-authenticated REST API for building in-app chat, split into User APIs and Admin APIs (users,
+    contacts, recent/history chat, groups, media, metadata, presence, block/unblock, call logs, device token). Uses
+    versioned /api/v1/ paths against a customer-specific instance base URL; bearer token valid up to 1 hour.
+  humanURL: https://www.mirrorfly.com/docs/platformapi/overview/
+  baseURL: https://{api-base-url}/api/v1
+  tags:
   - Chat API
   - Messaging
   - CPaaS
@@ -29,7 +57,7 @@ tags:
   - Conversational AI
   - Chatbots
   - Live Streaming
-tags_raw:
+  tags_raw:
   - Chat API
   - Messaging
   - CPaaS
@@ -40,50 +68,78 @@ tags_raw:
   - Conversational AI
   - Chatbot
   - Live Streaming
-apis:
-  - name: MirrorFly Chat Platform API
-    description: >-
-      Token-authenticated REST API for building in-app chat, split into User APIs and Admin APIs (users, contacts,
-      recent/history chat, groups, media, metadata, presence, block/unblock, call logs, device token). Uses versioned
-      /api/v1/ paths against a customer-specific instance base URL; bearer token valid up to 1 hour.
-    humanURL: https://www.mirrorfly.com/docs/platformapi/overview/
-    baseURL: https://{api-base-url}/api/v1
-    tags:
-      - Chat API
-      - Messaging
-      - CPaaS
-      - VoIP
-      - Voice
-      - Video Calling
-      - Contact Center
-      - Conversational AI
-      - Chatbots
-      - Live Streaming
-    tags_raw:
-      - Chat API
-      - Messaging
-      - CPaaS
-      - VoIP
-      - Voice
-      - Video Calling
-      - Contact Center
-      - Conversational AI
-      - Chatbot
-      - Live Streaming
-    properties:
-      - type: Documentation
-        url: https://www.mirrorfly.com/docs/platformapi/overview/
-      - type: Documentation
-        url: https://www.mirrorfly.com/docs/platformapi/userapis/getstarted/login/
-      - type: Documentation
-        url: https://www.mirrorfly.com/docs/platformapi/adminapis/get-started/
-      - type: LLMSTxt
-        url: https://www.mirrorfly.com/llms.txt
+  properties:
+  - type: Documentation
+    url: https://www.mirrorfly.com/docs/platformapi/overview/
+  - type: Documentation
+    url: https://www.mirrorfly.com/docs/platformapi/userapis/getstarted/login/
+  - type: Documentation
+    url: https://www.mirrorfly.com/docs/platformapi/adminapis/get-started/
+  - type: LLMsTxt
+    url: https://www.mirrorfly.com/llms.txt
 maintainers:
-  - FN: Custom Chat API | MirrorFly
-    url: https://www.mirrorfly.com/
+- FN: Custom Chat API | MirrorFly
+  url: https://www.mirrorfly.com/
 generated:
   by: apis.io/add
   model: claude-opus-4-8
   confidence: 80
   at: '2026-07-21T10:54:14.715Z'
+common:
+- type: Website
+  url: https://www.mirrorfly.com
+- type: DomainSecurity
+  url: security/custom-chat-api-mirrorfly-domain-security.yml
+- type: LLMsTxt
+  url: llms/custom-chat-api-mirrorfly-llms.txt
+- type: Packages
+  url: packages/custom-chat-api-mirrorfly-packages.yml
+- type: SDKs
+  url: packages/custom-chat-api-mirrorfly-packages.yml
+- type: Authentication
+  url: authentication/custom-chat-api-mirrorfly-authentication.yml
+- type: Conventions
+  url: conventions/custom-chat-api-mirrorfly-conventions.yml
+- type: ErrorCatalog
+  url: errors/custom-chat-api-mirrorfly-problem-types.yml
+- type: ChangeLog
+  url: changelog/custom-chat-api-mirrorfly-changelog.yml
+- type: Conformance
+  url: conformance/custom-chat-api-mirrorfly-conformance.yml
+- type: Compliance
+  url: https://www.mirrorfly.com/chat-security.php
+- type: Plans
+  url: plans/custom-chat-api-mirrorfly-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/custom-chat-api-mirrorfly-rate-limits.yml
+- type: Components
+  url: components/custom-chat-api-mirrorfly-components.yml
+- type: Lifecycle
+  url: lifecycle/custom-chat-api-mirrorfly-lifecycle.yml
+- type: DeveloperPortal
+  url: https://console.mirrorfly.com/
+- type: Documentation
+  url: https://www.mirrorfly.com/docs/
+- type: APIReference
+  url: https://www.mirrorfly.com/docs/platformapi/overview/
+- type: GettingStarted
+  url: https://www.mirrorfly.com/docs/platformapi/adminapis/get-started/
+- type: Support
+  url: https://www.mirrorfly.com/faq.php
+- type: Blog
+  url: https://www.mirrorfly.com/blog/
+- type: GitHubOrganization
+  url: https://github.com/MirrorFly
+- type: Pricing
+  url: https://www.mirrorfly.com/pricing.php
+- type: SignUp
+  url: https://console.mirrorfly.com/register
+- type: TermsOfService
+  url: https://www.mirrorfly.com/terms-and-conditions.php
+- type: PrivacyPolicy
+  url: https://www.mirrorfly.com/privacy-policy.php
+x-enrichment:
+  date: '2026-09-03'
+  status: enriched
+  artifacts_added: 13
+  pass: local-v2

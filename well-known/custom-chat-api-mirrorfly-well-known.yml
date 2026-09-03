@@ -1,0 +1,51 @@
+generated: '2026-09-03'
+method: probed
+source: live probes of the named /.well-known/ path list on both registrable-domain hosts
+note: >-
+  Every probed path on www.mirrorfly.com returns 302 -> /404.php (a 200 HTML soft-404), and the
+  bare-domain host 301s every path to www. The negative-control path also returned the same 302,
+  confirming a catch-all redirect: MirrorFly serves no /.well-known/ discovery documents, no
+  apis.json, and no A2A agent card. The API baseURL is a customer-specific template
+  ({api-base-url}) with no public host to probe. Recorded absences are valid data; no
+  WellKnown/SecurityTxt pointer is emitted.
+hit_count: 0
+path_echo_control: passed
+soft_404_control:
+  path: /.well-known/mirrorfly-negative-control-9c4e21ab.json
+  status: 302
+  final_status: 200
+  final_url: https://www.mirrorfly.com/404.php
+  bytes: 478832
+hosts:
+- host: https://www.mirrorfly.com
+  documents:
+  - {path: /.well-known/security.txt, status: 302}
+  - {path: /.well-known/openid-configuration, status: 302}
+  - {path: /.well-known/oauth-authorization-server, status: 302}
+  - {path: /.well-known/oauth-protected-resource, status: 302}
+  - {path: /.well-known/api-catalog, status: 302}
+  - {path: /.well-known/ai-plugin.json, status: 302}
+  - {path: /.well-known/ucp.json, status: 302}
+  - {path: /.well-known/acp.json, status: 302}
+  - {path: /.well-known/aauth-resource.json, status: 302}
+  - {path: /.well-known/apis.json, status: 302}
+  - {path: /apis.json, status: 302}
+  - {path: /apis.yml, status: 302}
+  - {path: /.well-known/agent-card.json, status: 302}
+  - {path: /.well-known/agent.json, status: 302}
+- host: https://mirrorfly.com
+  documents:
+  - {path: /.well-known/security.txt, status: 301}
+  - {path: /.well-known/openid-configuration, status: 301}
+  - {path: /.well-known/oauth-authorization-server, status: 301}
+  - {path: /.well-known/oauth-protected-resource, status: 301}
+  - {path: /.well-known/api-catalog, status: 301}
+  - {path: /.well-known/ai-plugin.json, status: 301}
+  - {path: /.well-known/ucp.json, status: 301}
+  - {path: /.well-known/acp.json, status: 301}
+  - {path: /.well-known/aauth-resource.json, status: 301}
+  - {path: /.well-known/apis.json, status: 301}
+  - {path: /apis.json, status: 301}
+  - {path: /apis.yml, status: 301}
+  - {path: /.well-known/agent-card.json, status: 301}
+  - {path: /.well-known/agent.json, status: 301}

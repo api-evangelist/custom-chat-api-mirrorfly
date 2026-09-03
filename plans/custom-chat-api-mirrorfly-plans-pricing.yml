@@ -1,0 +1,38 @@
+generated: '2026-09-03'
+method: searched
+source: https://www.mirrorfly.com/pricing.php
+plan_count: 4
+currency: USD
+note: >-
+  Pricing is MAU-based (slider 5k/10k/20k/30k/50k/100k+) and the per-tier monthly prices are
+  computed client-side by JavaScript, so exact tier prices are not readable from the static page —
+  the page itself says prices need JS enabled. Tier structure, trial terms, and the published
+  per-minute call rates are captured; a custom/enterprise plan is offered via sales. Subscriptions
+  auto-renew monthly.
+plans:
+- name: Easy
+  price: 0
+  currency: USD
+  billing_period: lifetime
+  description: Free in-app chat features, 100% free for lifetime, no credit card required.
+- name: Essentials
+  price: null
+  currency: USD
+  billing_period: monthly
+  trial: 21-day free trial
+  description: Everything in Easy plus advanced chat features; monthly price varies by MAU tier.
+- name: Premium
+  price: null
+  currency: USD
+  billing_period: monthly
+  description: Everything in Essentials plus voice and video calls; monthly price varies by MAU tier.
+- name: Custom
+  price: null
+  currency: USD
+  billing_period: custom
+  description: '"Playing Big? Get A Custom Plan" — contact sales; self-hosted/dedicated-server options.'
+usage_rates:
+- {metric: call minutes, rate: '$0.0010/minute', note: published on the pricing page}
+- {metric: call minutes (higher tier), rate: '$0.0015/minute', note: published on the pricing page}
+limits_attached_to_tiers:
+- 'MAU bands: 5k, 10k, 20k, 30k, 50k, 100k+ — cost changes based on the MAU band chosen'

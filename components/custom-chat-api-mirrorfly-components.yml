@@ -1,0 +1,23 @@
+generated: '2026-09-03'
+method: searched
+source: https://www.mirrorfly.com/docs/uikit/overview/
+note: >-
+  MirrorFly ships prebuilt client-side UI kits (chat screens, call screens) distinct from its core
+  SDKs — published as installable packages and documented under /docs/uikit/. Marketing surface:
+  https://www.mirrorfly.com/chat-ui-kit.php.
+families:
+- family: Chat UIKit (React)
+  package: mirrorfly-uikit (npm, 4.1.9)
+  docs: https://www.mirrorfly.com/docs/uikit/overview/
+- family: Chat UIKit (React Native)
+  package: mirrorfly-uikit-react-native (npm, 1.4.8)
+  docs: https://www.mirrorfly.com/docs/uikit/overview/
+- family: Chat UIKit (Flutter)
+  package: mirrorfly_uikit_plugin (pub.dev, 3.0.0+1)
+  docs: https://www.mirrorfly.com/docs/uikit/flutter/quick-start/
+- family: Chat UIKit (iOS)
+  package: Mirrorfly-iosuikit-framework (github.com/MirrorFly)
+  docs: https://www.mirrorfly.com/docs/uikit/overview/
+- family: Chat UIKit (Android)
+  package: MF-Android-UIKIT-SDK (github.com/MirrorFly)
+  docs: https://www.mirrorfly.com/docs/uikit/overview/

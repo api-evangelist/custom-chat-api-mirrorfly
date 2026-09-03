@@ -1,0 +1,12 @@
+generated: '2026-09-03'
+method: searched
+source: https://www.mirrorfly.com/docs/platformapi/overview/
+limit_count: 0
+note: >-
+  No rate limits are documented anywhere in the Platform API docs — no numeric limits, no
+  X-RateLimit-*/RateLimit-*/Retry-After response headers, and no documented 429 behavior. The only
+  documented throttling-adjacent contract is the 1-hour auth-token expiry (401 -> re-login). As a
+  self-hosted product, runtime limits are effectively the customer's own instance capacity. An
+  honest zero, recorded as data.
+limits: []
+headers: []

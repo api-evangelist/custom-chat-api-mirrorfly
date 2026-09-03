@@ -1,0 +1,26 @@
+generated: '2026-09-03'
+method: searched
+source: https://www.mirrorfly.com/docs/platformapi/userapis/getstarted/login/
+format: custom-envelope
+note: >-
+  No OpenAPI exists; error shape is read from the Platform API docs. Errors are NOT RFC 9457
+  problem+json: every endpoint documents a JSON envelope {"status": <code>, "message": "<text>"};
+  successful responses use the same envelope with an added "data" object.
+envelope:
+  status: numeric code mirroring the HTTP status
+  message: human-readable error text
+problems:
+- status: 400
+  title: Bad request / validation error
+  detail: Returned with an error message in the envelope when request params are invalid.
+  source: https://www.mirrorfly.com/docs/platformapi/userapis/getstarted/login/
+- status: 401
+  title: Authentication token expired or invalid
+  detail: >-
+    Secured endpoints return 401 when the 1-hour login token has expired; the documented remediation
+    is to call POST /api/v1/login again and retry with the new token.
+  source: https://www.mirrorfly.com/docs/platformapi/adminapis/get-started/
+- status: 200
+  title: Success envelope
+  detail: '{"status": 200, "data": {...}, "message": "Data retrieved successfully"}'
+  source: https://www.mirrorfly.com/docs/platformapi/adminapis/get-started/

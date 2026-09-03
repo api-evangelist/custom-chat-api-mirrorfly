@@ -1,0 +1,54 @@
+generated: '2026-09-03'
+method: searched
+source: https://www.mirrorfly.com/docs/platformapi/api-changelog/
+scheme: semver-like (MAJOR.MINOR.PATCH), reverse-chronological
+current_version: 2.1.9
+note: >-
+  The Platform API publishes a versioned change log but does not date its entries; versions only.
+  Recent window captured below; the live page is the source of truth back to 1.0.0.
+entries:
+- version: 2.1.9
+  changes:
+  - 'Group: new APIs to initiate a group deletion job and track its status'
+  breaking: false
+- version: 2.1.8
+  changes:
+  - 'Chat: new APIs to get chat info by chatId and topicId'
+  breaking: false
+- version: 2.1.7
+  changes:
+  - 'Chat: new chat recent and chat conversations APIs for admin monitoring'
+  - 'Topic: URL changes in the topic-based chat APIs'
+  breaking: true
+- version: 2.1.6
+  changes:
+  - 'Topic: new APIs for admin recent chat and chat history'
+  breaking: false
+- version: 2.1.5
+  changes:
+  - 'Chat: archive, unarchive, and archived-list APIs introduced'
+  - 'Chat: messageTime param on recent chats; messageId param on send message (edit support)'
+  breaking: false
+- version: 2.1.4
+  changes:
+  - 'User: create user email param accepts special characters'
+  - 'Chat: create topic accepts license key; new API to retrieve topics by license key/user'
+  breaking: false
+- version: 2.1.3
+  changes:
+  - 'User: blocked-by users list; call logs and create room APIs'
+  - 'Group: metaData param on create/update; metaData in group list/details responses'
+  breaking: false
+- version: 2.1.2
+  changes:
+  - 'User: block/unblock user APIs; Chat: unread message count API; exclude param on recent chats'
+  breaking: false
+- version: 2.1.1
+  changes:
+  - 'Admin: reset user password API; Chat: isLargeFile and auto_text handling in responses'
+  breaking: false
+- version: 2.1.0
+  changes:
+  - 'Chat: topics introduced (create/fetch, topicId in send/recent/history)'
+  - 'User/Admin: metadata fetch and update APIs'
+  breaking: false

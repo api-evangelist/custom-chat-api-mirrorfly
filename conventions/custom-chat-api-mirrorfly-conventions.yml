@@ -1,0 +1,63 @@
+generated: '2026-09-03'
+method: searched
+source: https://www.mirrorfly.com/docs/platformapi/overview/
+note: >-
+  Read from the Platform API docs (no OpenAPI is published). Cross-links: errors/, authentication/,
+  lifecycle/, rate-limits/ in this repo.
+authentication:
+  style: custom short-lived token (1h) from POST /api/v1/login, sent in the Authorization header
+  reference: authentication/custom-chat-api-mirrorfly-authentication.yml
+versioning:
+  scheme: uri-path
+  current: v1
+  note: All endpoints are versioned under /api/v1/ against a customer-specific self-hosted base URL.
+base_url:
+  style: templated
+  template: https://{api-base-url}/api/v1
+  note: >-
+    MirrorFly is self-hosted; {api-base-url} is the customer's own instance host, obtained from the
+    MirrorFly console. There is no shared public API host.
+pagination:
+  style: page-number
+  params: [page, size]
+  defaults: {page: 1, size: 50}
+  evidence: https://www.mirrorfly.com/docs/platformapi/userapis/user/users/
+error_envelope:
+  shape: '{"status": <http-ish code>, "message": "<text>"} — success responses add a "data" object'
+  reference: errors/custom-chat-api-mirrorfly-problem-types.yml
+request_tracing:
+  documented: false
+idempotency:
+  coverage: none
+  note: >-
+    No idempotency-key mechanism or replay protection is documented anywhere in the Platform API
+    docs; retried writes (send message, create group) are not deduplicated by any documented
+    contract.
+reversibility:
+  grade: documented
+  note: >-
+    Several write surfaces have documented reversal operations but no stated windows: block user /
+    unblock user, block groups / unblock groups (moderation), and chat archive / unarchive are
+    paired do-undo operations. Destructive deletes have no documented restore path: delete message,
+    delete group, delete user account, and delete my account are irreversible as documented, with
+    no recovery window stated.
+  reversal_paths:
+  - {action: block user (POST /api/v1/users/block), reversal: unblock user (POST /api/v1/users/unblock), window: none stated, docs: https://www.mirrorfly.com/docs/platformapi/userapis/user/unblock-user/}
+  - {action: block groups/users (POST /api/v1/moderation/block), reversal: unblock via the same moderation surface, window: none stated, docs: https://www.mirrorfly.com/docs/platformapi/adminapis/moderation/unblock-groups/}
+  - {action: archive chat (POST /api/v1/chat/archive), reversal: unarchive via the same endpoint, window: none stated, docs: https://www.mirrorfly.com/docs/platformapi/userapis/chat/archive/}
+  irreversible:
+  - delete message (POST /api/v1/chat/deletemessage)
+  - delete group (DELETE /api/v1/group/deleteGroup)
+  - delete user account (POST /api/v1/users/deleteUserAccount)
+  - delete my account (POST /api/v1/users/deleteMyAccount)
+rate_limit_signaling:
+  documented: false
+  reference: rate-limits/custom-chat-api-mirrorfly-rate-limits.yml
+field_expansion:
+  documented: false
+metadata:
+  documented: true
+  note: >-
+    User and group metadata are first-class — get/update metadata endpoints exist on both User and
+    Admin APIs, metadata-based search is supported in the user list, and groups accept a metaData
+    param in create/update.

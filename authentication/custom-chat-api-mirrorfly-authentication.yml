@@ -1,0 +1,27 @@
+generated: '2026-09-03'
+method: searched
+source: https://www.mirrorfly.com/docs/platformapi/adminapis/get-started/
+docs: https://www.mirrorfly.com/docs/platformapi/userapis/getstarted/login/
+note: >-
+  No OpenAPI exists to derive from; this profile is read from the provider's Platform API docs.
+  Authentication is a custom short-lived bearer token, not OAuth: POST /api/v1/login with the
+  static username/password issued in the MirrorFly console (shown after server configuration for
+  Eazy-plan and paid subscribers) returns a token valid for up to 1 hour. Secured endpoints send
+  that token in the Authorization header; on a 401 the client must call login again for a fresh
+  token. There are separate User API and Admin API credentials, both following the same flow.
+summary:
+  types: [custom-token]
+  token_endpoint: POST /api/v1/login
+  token_ttl_seconds: 3600
+  header: Authorization
+  oauth2_flows: []
+schemes:
+- name: PlatformApiToken
+  type: http
+  scheme: bearer-like custom token
+  description: >-
+    Short-lived (1 hour) token returned by POST /api/v1/login using console-issued username and
+    password; sent on secured endpoints via the Authorization header. Expired tokens return 401.
+  sources:
+  - https://www.mirrorfly.com/docs/platformapi/userapis/getstarted/login/
+  - https://www.mirrorfly.com/docs/platformapi/adminapis/get-started/

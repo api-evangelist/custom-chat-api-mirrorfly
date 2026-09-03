@@ -1,0 +1,43 @@
+generated: '2026-09-03'
+method: searched
+source: https://www.mirrorfly.com/chat-security.php
+note: >-
+  Claims are read from the provider's own security and compliance pages; no third-party audit
+  reports, trust center, or certification documents are published, and there is no machine-readable
+  contract to check domain-standard signatures against. MirrorFly's market (in-app chat/CPaaS) has
+  no dominant domain standard; no domain-standard conformance is asserted.
+standards:
+- id: gdpr
+  conforms: true
+  kind: provider-claim
+  evidence: 'https://www.mirrorfly.com/chat-security.php — "Keep Your App In Sync With Global Compliances: GDPR"'
+- id: hipaa
+  conforms: true
+  kind: provider-claim
+  evidence: >-
+    https://www.mirrorfly.com/hipaa-compliant-chat-api.php — dedicated HIPAA-compliant chat API
+    page; chat-security.php states MirrorFly "strictly operates by the HIPAA standards"
+- id: owasp
+  conforms: true
+  kind: provider-claim
+  evidence: 'https://www.mirrorfly.com/chat-security.php — OWASP-compatible secure messaging claim'
+- id: oauth2
+  conforms: false
+  evidence: Platform API uses a custom console-credential login token, not OAuth 2.0
+- id: oidc
+  conforms: false
+  evidence: no OpenID Connect surface; /.well-known/openid-configuration is not served
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: errors use a custom {status, message} envelope, not application/problem+json
+- id: idempotency
+  conforms: false
+  evidence: no idempotency mechanism documented anywhere in the Platform API docs
+- id: pagination
+  conforms: true
+  kind: derived
+  evidence: page/size page-number pagination with documented defaults on list endpoints
+encryption_claims:
+- AES encryption of communications
+- OMEMO end-to-end encryption
+- TLS in transit
