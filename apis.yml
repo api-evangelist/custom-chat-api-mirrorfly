@@ -15,7 +15,7 @@ deliveryModel:
   generated: '2026-08-28'
   method: derived
 created: '2026-07-21'
-modified: '2026-09-03'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 tags:
 - Chat API
@@ -86,6 +86,8 @@ generated:
   confidence: 80
   at: '2026-07-21T10:54:14.715Z'
 common:
+- url: https://www.mirrorfly.com/blog/feed/
+  type: BlogRSS
 - type: Website
   url: https://www.mirrorfly.com
 - type: DomainSecurity
