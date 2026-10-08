@@ -36,3 +36,34 @@ usage_rates:
 - {metric: call minutes (higher tier), rate: '$0.0015/minute', note: published on the pricing page}
 limits_attached_to_tiers:
 - 'MAU bands: 5k, 10k, 20k, 30k, 50k, 100k+ — cost changes based on the MAU band chosen'
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  units: []
+  plans:
+  - name: Easy
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Essentials
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Premium
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Custom
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
