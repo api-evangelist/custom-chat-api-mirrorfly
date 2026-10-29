@@ -1,4 +1,4 @@
-# custom-chat-api-mirrorfly
+# Custom Chat API | MirrorFly
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -65,3 +65,106 @@
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
 MirrorFly is a self-hosted CPaaS providing token-authenticated REST Chat Platform APIs (User and Admin) plus SDKs for in-app chat, HD video/voice calling, VoIP, contact center, chatbot/conversational AI, and live streaming for web and mobile apps.
+
+**Areas:** Chat API · Messaging · CPaaS · VoIP · Voice · Video Calling · Contact Center · Conversational AI · Chatbots · Live Streaming
+
+## Custom Chat API | MirrorFly on APIs.io
+
+Everything profiled for Custom Chat API | MirrorFly is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/custom-chat-api-mirrorfly/](https://apis.io/providers/custom-chat-api-mirrorfly/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [MirrorFly Chat Platform API](https://apis.io/apis/custom-chat-api-mirrorfly/mirrorfly-chat-platform-api/) — Token-authenticated REST API for building in-app chat, split into User APIs and Admin APIs (users, contacts, recent/history chat, groups, media, metadata,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Custom Chat Api Mirrorfly Authentication](https://apis.io/security/custom-chat-api-mirrorfly/custom-chat-api-mirrorfly-authentication/)
+- [Custom Chat Api Mirrorfly Domain Security](https://apis.io/security/custom-chat-api-mirrorfly/custom-chat-api-mirrorfly-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Custom Chat Api Mirrorfly Plans Pricing](https://apis.io/plans/custom-chat-api-mirrorfly/custom-chat-api-mirrorfly-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Custom Chat Api Mirrorfly Rate Limits](https://apis.io/rate-limits/custom-chat-api-mirrorfly/custom-chat-api-mirrorfly-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.mirrorfly.com)
+- [Documentation](https://www.mirrorfly.com/docs/)
+- [Getting started](https://www.mirrorfly.com/docs/platformapi/adminapis/get-started/)
+- [API reference](https://www.mirrorfly.com/docs/platformapi/overview/)
+- [Pricing](https://www.mirrorfly.com/pricing.php)
+- [Sign up](https://console.mirrorfly.com/register)
+- [Support](https://www.mirrorfly.com/faq.php)
+- [Blog](https://www.mirrorfly.com/blog/)
+- [Compliance](https://www.mirrorfly.com/chat-security.php)
+- [Terms of service](https://www.mirrorfly.com/terms-and-conditions.php)
+- [Privacy policy](https://www.mirrorfly.com/privacy-policy.php)
+- [GitHub](https://github.com/MirrorFly)
+
+## API Evangelist rating
+
+**Kin Score 25.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 47.6 |
+| Access clarity | 31.6 |
+
+**Agent readiness 7.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 14.2** — Telecommunications
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/custom-chat-api-mirrorfly/](https://apis.io/providers/custom-chat-api-mirrorfly/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Custom Chat API | MirrorFly: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/custom-chat-api-mirrorfly/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
