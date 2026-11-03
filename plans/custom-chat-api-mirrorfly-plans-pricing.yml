@@ -37,7 +37,7 @@ usage_rates:
 limits_attached_to_tiers:
 - 'MAU bands: 5k, 10k, 20k, 30k, 50k, 100k+ — cost changes based on the MAU band chosen'
 x-canonical:
-  generated: '2026-11-01'
+  generated: '2026-11-02'
   vocabulary: engine/economics/plans-canonical.yml
   models:
   - free
